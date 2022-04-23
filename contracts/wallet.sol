@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity >=0.6.0 <0.8.13;
 
 import "../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
@@ -39,5 +39,5 @@ contract Wallet is Ownable {
         IERC20(tokenMapping[ticker].tokenAddress).transfer(msg.sender, amount);
     }
 
-
+    
 }
