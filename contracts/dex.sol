@@ -1,6 +1,6 @@
 pragma solidity >=0.6.0 <0.8.13;
 pragma experimental ABIEncoderV2;
-import "../contracts/wallet.sol";
+import "./wallet.sol";
 
 contract Dex is Wallet {
 
@@ -18,9 +18,14 @@ contract Dex is Wallet {
         uint price;
     }
 
-    mapping(bytes32 => mapping(uint => Order[])) orderBook;
+    mapping(bytes32 => mapping(uint => Order[])) public orderBook;
 
     function getOrderBook(bytes32 ticker, Side side) view public returns(Order[] memory) {
         return orderBook[ticker][uint(side)];
     }
+
+    // function createLimitOrder() {
+
+    // }
+
 }
