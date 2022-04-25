@@ -1,5 +1,6 @@
 const Dex = artifacts.require("Dex")
 const Link = artifacts.require("Link")
+//const Wallet = artifacts.require("Wallet")
 const truffleAssert = require('truffle-assertions');
 
 contract("Dex", accounts => {
