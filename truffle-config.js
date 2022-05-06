@@ -1,3 +1,5 @@
+//SPDX-License-Identifier: MIT
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -44,7 +46,8 @@ module.exports = {
     development: {
       host: '127.0.0.1', // Localhost (default: none)
       port: 8545, // Standard Ethereum port (default: none)
-      network_id: '*', // Any network (default: none)
+      network_id: '*',
+      gas: 8721974, // Any network (default: none)
     },
     // Another network with more advanced options...
     // advanced: {
@@ -82,10 +85,10 @@ module.exports = {
   compilers: {
     solc: {
       version: '>=0.6.0 <0.8.13', // Fetch exact version from solc-bin (default: truffle's version)
-      settings: {
-        // See the solidity docs for advice about optimization and evmVersion
-        evmVersion: 'byzantium',
-      },
+      // settings: {
+      //   // See the solidity docs for advice about optimization and evmVersion
+      //   evmVersion: 'byzantium',
+      // },
     },
   },
 

@@ -1,3 +1,5 @@
+//SPDX-License-Identifier: MIT
+
 const Link = artifacts.require('Link');
 const Dex = artifacts.require('Dex');
 
